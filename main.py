@@ -12,7 +12,7 @@ from get_course import get_course
 
 
 def get_service_acc():  # Авторизация сервисного аккаунта google
-    creds_json = os.path.join(os.path.dirname(__file__), "kanal-table-5eac2891ffdd.json")
+    creds_json = os.path.join(os.path.dirname(__file__), "SECRET_KEY.json")
     scopes = ['https://www.googleapis.com/auth/spreadsheets']
 
     creds_service = ServiceAccountCredentials.from_json_keyfile_name(creds_json, scopes).authorize(httplib2.Http())
