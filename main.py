@@ -20,7 +20,7 @@ def get_service_acc():  # Авторизация сервисного аккау
 
 
 def get_sheet():  # Получение таблицы с данными
-    sheet_id = '1qt4QBYRvgzK4cdFAxHsSuVX8mxZsc9XqtTK7SkXn5eQ'
+    sheet_id = '1qt4QBYRvgzK4cdFAxHsSuVX8mxZsc9XqtTK7SkXn5eQ' # ID таблицы в Google Sheets
     resp = get_service_acc().spreadsheets().values().batchGet(spreadsheetId=sheet_id, ranges=["Лист1"]).execute()
     return resp['valueRanges'][0]['values'][1:]  # Список со строками таблицы, первый элемент - название колонок
 
