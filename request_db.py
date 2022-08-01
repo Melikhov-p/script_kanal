@@ -14,7 +14,7 @@ def request_db_get(request):
 
 
 def request_db_post(request):
-    conn = psycopg2.connect(dbname='kanal_db', user='pavel', password='', host='localhost', connect_timeout=5)  # Подключение к БД
+    conn = psycopg2.connect(dbname='kanal_db', user='USERNAME', password='', host='localhost', connect_timeout=5)  # Подключение к БД
 
     cursor = conn.cursor()
 
