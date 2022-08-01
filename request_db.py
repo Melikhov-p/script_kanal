@@ -23,5 +23,3 @@ def request_db_post(request):
     cursor.close()
     conn.close()
     return 0
-
-# print(request_db_get('SELECT * from kanal_table WHERE "order"=1120833')[0][4].strftime("%d.%m.%Y"))
